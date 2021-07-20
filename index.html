@@ -8,6 +8,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
+
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -28,7 +33,7 @@
         </div>
       </nav>
     </div>
-    <div class="container">
+    <div class="container hero-section">
       <div class="hero">
         <h1>We are creatives</h1>
         <span>&#8595</span>
@@ -37,62 +42,76 @@
   </section>
 
   <section>
-    <div class="container">
-      <article>
-        <!-- implement a background image -->
+    <article>
+      <div class="img-section">
+        <div class="img-container mobile"><img src="images/mobile/image-transform.jpg" alt="egg picture"></div>
+        <div class="img-container desktop"><img src="images/desktop/image-transform.jpg" alt="egg picture"></div>
+      </div>
+      <div class="container">
         <div class="article-section">
           <h2>Transform your brand</h2>
           <p>We are a full-service creative agency specializing in helping brands grow fast.
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
-          <button>Learn more</button>
+          <a href="#" class="learn-more-button yellow">Learn more</a>
         </div>
-      </article>
-      <article>
-        <!-- implement a background image -->
+      </div>
+    </article>
+    <article>
+      <div class="img-section">
+        <div class="img-container mobile"><img src="images/mobile/image-stand-out.jpg" alt="cup picture"></div>
+        <div class="img-container desktop"><img src="images/desktop/image-stand-out.jpg" alt="cup picture"></div>
+      </div>
+      <div class="container">
         <div class="article-section">
           <h2>T Stand out to the right audience</h2>
           <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
             we’ll build and extend your brand in digital places. </p>
-          <button>Learn more</button>
+          <a href="#" class="learn-more-button pink">Learn more</a>
         </div>
-      </article>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="feature">
-        <h2>Graphic design</h2>
-        <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-          potential clients’ attention.</p>
       </div>
-      <div class="feature">
-        <h2>Photography</h2>
-        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-        </p>
+    </article>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <div class="container">
+        <div class="feature__content">
+          <h2>Graphic design</h2>
+          <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential clients’ attention.</p>
+        </div>
       </div>
     </div>
+    <div class="feature">
+      <div class="container">
+        <div class="feature__content">
+          <h2>Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
-  <section>
+  <section class="testimonials">
     <div class="container">
       <h3>Client testimonials</h3>
-      <div class="testimonials">
         <div class="testimonial">
-          <div class="portrait-container"><img src="" alt=""></div>
-          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+          <div class="testimonial__portrait"><img src="images/image-emily.jpg" alt="Emily portrait"></div>
+          <p class="testimonial__content">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
             hit.</p>
           <p class="name">Emily R.</p>
           <p class="position">Marketing Director</p>
         </div>
         <div class="testimonial">
-          <div class="portrait-container"><img src="" alt=""></div>
-          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+          <div class="testimonial__portrait"><img src="images/image-thomas.jpg" alt="Thomas portrait"></div>
+          <p class="testimonial__content">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
             enjoyable experience.</p>
           <p class="name">Thomas S.</p>
           <p class="position">Chief Operating Officer</p>
         </div>
         <div class="testimonial">
-          <div class="portrait-container"><img src="" alt=""></div>
-          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="testimonial__portrait"><img src="images/image-jennie.jpg" alt=" emily portrait"></div>
+          <p class="testimonial__content">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
           <p class="name">Jennie F.</p>
           <p class="position">Business Owner</p>
         </div>
@@ -100,32 +119,24 @@
     </div>
   </section>
   <section>
-    <div class="container">
-      <div class="mobile">
-        <div class="img-container"><img src="images/mobile/image-gallery-milkbottles.jpg" alt="milk picture"></div>
-        <div class="img-container"><img src="images/mobile/image-gallery-orange.jpg" alt="orange picture"></div>
-        <div class="img-container"><img src="images/mobile/image-gallery-cone.jpg" alt="ice cream con picture"></div>
-        <div class="img-container"><img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cube picture">
-        </div>
-      </div>
-      <div class="desktop">
-        <div class="img-container"><img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk picture"></div>
-        <div class="img-container"><img src="images/desktop/image-gallery-orange.jpg" alt="orange picture"></div>
-        <div class="img-container"><img src="images/desktop/image-gallery-cone.jpg" alt="ice cream con picture"></div>
-        <div class="img-container"><img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cube picture">
+    <div class="grid">
+        <div class="img-container"><img  class="mobile" src="images/mobile/image-gallery-milkbottles.jpg" alt="milk picture"><img class="desktop" src="images/desktop/image-gallery-milkbottles.jpg" alt="milk picture"></div>
+        <div class="img-container"><img class="mobile" src="images/mobile/image-gallery-orange.jpg" alt="orange picture"><img class="desktop" src="images/desktop/image-gallery-orange.jpg" alt="orange picture"></div>
+        <div class="img-container"><img class="mobile" src="images/mobile/image-gallery-cone.jpg" alt="ice cream con picture"><img class="desktop" src="images/desktop/image-gallery-cone.jpg" alt="ice cream con picture"></div>
+        <div class="img-container"><img class="mobile" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cube picture"><img class="desktop" src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cube picture">
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="container">
-      <footer>
-        <a href="#" class="logo"><img src="" alt=""></a>
-        <div>
+    <footer>
+        <div class="container">
+        <span class="logo">sunnyside</span>
+        <div class="sitemap">
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Projects</a>
-          <a href="#">Contact</a>
+          <!-- <a href="#">Contact</a> -->
         </div>
         <div class="social-media">
           <a href="#" class="icon"><img src="images/icon-facebook.svg" alt="facebook icon"></a>
@@ -133,14 +144,14 @@
           <a href="#" class="icon"><img src="images/icon-twitter.svg" alt="twitter icon"></a>
           <a href="#" class="icon"><img src="images/icon-pinterest.svg" alt="Pinterest icon"></a>
         </div>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Sean Yang</a>.
+        </div>
+      </div>
       </footer>
-    </div>
   </section>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Sean Yang</a>.
-  </div>
 </body>
 
 </html>
