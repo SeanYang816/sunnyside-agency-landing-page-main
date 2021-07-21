@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+    ">
 
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -20,25 +22,25 @@
 
 <body>
   <section class="section">
-    <div class="container">
-      <nav>
-        <a href="#" class="logo"><img src="images/logo.svg" alt="Sunnyside logo"></a>
-        <a href="#" class="hamburger-menu">
-          <img src="images/icon-hamburger.svg" alt="hamburger menu"></a>
-        <div class="menu desktop hidden">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+      <div class="container">
+        <nav>
+          <a href="#"><img class="logo" src="images/logo.svg" alt="Sunnyside logo"></a>
+          <a href="#" class="hamburger-menu">
+            <i class="fas fa-bars"></i></a>
+          <div class="menu desktop">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#" class="cta">Contact</a>
+          </div>
+        </nav>
+        <div class="hero-section">
+          <div class="hero">
+            <h1>We are creatives</h1>
+            <span>&#8595</span>
+          </div>
         </div>
-      </nav>
-    </div>
-    <div class="container hero-section">
-      <div class="hero">
-        <h1>We are creatives</h1>
-        <span>&#8595</span>
       </div>
-    </div>
   </section>
 
   <section>
@@ -47,8 +49,8 @@
         <div class="img-container mobile"><img src="images/mobile/image-transform.jpg" alt="egg picture"></div>
         <div class="img-container desktop"><img src="images/desktop/image-transform.jpg" alt="egg picture"></div>
       </div>
-      <div class="container">
-        <div class="article-section">
+      <div class="article-section">
+          <div class="container">
           <h2>Transform your brand</h2>
           <p>We are a full-service creative agency specializing in helping brands grow fast.
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
@@ -61,8 +63,8 @@
         <div class="img-container mobile"><img src="images/mobile/image-stand-out.jpg" alt="cup picture"></div>
         <div class="img-container desktop"><img src="images/desktop/image-stand-out.jpg" alt="cup picture"></div>
       </div>
-      <div class="container">
-        <div class="article-section">
+      <div class="article-section">
+          <div class="container">
           <h2>T Stand out to the right audience</h2>
           <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
             we’ll build and extend your brand in digital places. </p>
@@ -93,8 +95,8 @@
     </div>
   </section>
   <section class="testimonials">
+    <h3>Client testimonials</h3>
     <div class="container">
-      <h3>Client testimonials</h3>
         <div class="testimonial">
           <div class="testimonial__portrait"><img src="images/image-emily.jpg" alt="Emily portrait"></div>
           <p class="testimonial__content">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
@@ -139,10 +141,11 @@
           <!-- <a href="#">Contact</a> -->
         </div>
         <div class="social-media">
-          <a href="#" class="icon"><img src="images/icon-facebook.svg" alt="facebook icon"></a>
-          <a href="#" class="icon"><img src="images/icon-instagram.svg" alt="instagram icon"></a>
-          <a href="#" class="icon"><img src="images/icon-twitter.svg" alt="twitter icon"></a>
-          <a href="#" class="icon"><img src="images/icon-pinterest.svg" alt="Pinterest icon"></a>
+          
+          <a href="#" class="icon"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-pinterest"></i></a>
         </div>
         <div class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
